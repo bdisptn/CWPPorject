@@ -1,9 +1,11 @@
 package Condition2;
 
 public class NestedSwitch {
+    // Metode untuk menerima nilai category & choice bertipe int
     public String getSelection(int category, int choice) {
-        String result;
+        String result; // Membuat variabel result
 
+        // Pemilihan bersarang untuk membuat opsi-opsi pesanan
         switch (category) {
             case 1:
                 switch (choice) {
@@ -46,6 +48,7 @@ public class NestedSwitch {
             break;    
         }
 
+        // Mengembalikan nilai dari result
         return result;
     }
 }

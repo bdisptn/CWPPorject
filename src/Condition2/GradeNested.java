@@ -1,9 +1,11 @@
 package Condition2;
 
 public class GradeNested {
+    // Metode untuk menerima nilai subject & score bertipe String dan int
     public String getGradeInfo(String subject, int score) {
-        String result = "";
+        String result = ""; // Membuat variabel result
 
+        // Pemilihan bersarang untuk membuat subject dan konversi score menjadi grade
         if (subject.equalsIgnoreCase("Math")) {
             if (score >= 90) {
                 result = "Subject: Math, Grade: A";
@@ -27,6 +29,7 @@ public class GradeNested {
         
         }
 
+        // Mengembalikan nilai dari result
         return result;
     }
 }
